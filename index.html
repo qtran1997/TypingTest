@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="#" />
+        <title>
+            Gotta Type Fast!
+        </title>
+        <link rel="stylesheet" type="text/css" href="TypingTest.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    </head>
+
+
+    <body class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+        </nav>
+        <div id="typing-container" class="container-fluid" >
+            <div id="stats">
+                <h1 id="wpm">
+                    0 wpm
+                </h1>
+                <h1 id="accuracy">
+                    Accuracy: 100.00%
+                </h1>
+            </div>
+            <div class="text-box-wrapper noselect" tabindex="-1"><p readonly id="text-box" class="noselect"></p></div>
+            <button id="keyboard-button">Open Keyboard</button>
+        </div>
+
+        <div id="container">
+            <ul id="keyboard" class="noselect">
+                <li class="key symbol"><span class="off">&#96;</span><span class="on">&#126;</span></li>
+                <li class="key symbol"><span class="off">1</span><span class="on">!</span></li>
+                <li class="key symbol"><span class="off">2</span><span class="on">@</span></li>
+                <li class="key symbol"><span class="off">3</span><span class="on">#</span></li>
+                <li class="key symbol"><span class="off">4</span><span class="on">$</span></li>
+                <li class="key symbol"><span class="off">5</span><span class="on">%</span></li>
+                <li class="key symbol"><span class="off">6</span><span class="on">^</span></li>
+                <li class="key symbol"><span class="off">7</span><span class="on">&amp;</span></li>
+                <li class="key symbol"><span class="off">8</span><span class="on">*</span></li>
+                <li class="key symbol"><span class="off">9</span><span class="on">(</span></li>
+                <li class="key symbol"><span class="off">0</span><span class="on">)</span></li>
+                <li class="key symbol"><span class="off">-</span><span class="on">_</span></li>
+                <li class="key symbol"><span class="off">=</span><span class="on">+</span></li>
+                <li class="key delete lastitem">delete</li>
+                <li class="key tab">tab</li>
+                <li class="key letter">q</li>
+                <li class="key letter">w</li>
+                <li class="key letter">e</li>
+                <li class="key letter">r</li>
+                <li class="key letter">t</li>
+                <li class="key letter">y</li>
+                <li class="key letter">u</li>
+                <li class="key letter">i</li>
+                <li class="key letter">o</li>
+                <li class="key letter">p</li>
+                <li class="key symbol"><span class="off">[</span><span class="on">{</span></li>
+                <li class="key symbol"><span class="off">]</span><span class="on">}</span></li>
+                <li class="key symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
+                <li class="key capslock">caps lock</li>
+                <li class="key letter">a</li>
+                <li class="key letter">s</li>
+                <li class="key letter">d</li>
+                <li class="key letter">f</li>
+                <li class="key letter">g</li>
+                <li class="key letter">h</li>
+                <li class="key letter">j</li>
+                <li class="key letter">k</li>
+                <li class="key letter">l</li>
+                <li class="key symbol"><span class="off">;</span><span class="on">:</span></li>
+                <li class="key symbol"><span class="off">'</span><span class="on">&quot;</span></li>
+                <li class="key return lastitem">return</li>
+                <li class="key left-shift">shift</li>
+                <li class="key letter">z</li>
+                <li class="key letter">x</li>
+                <li class="key letter">c</li>
+                <li class="key letter">v</li>
+                <li class="key letter">b</li>
+                <li class="key letter">n</li>
+                <li class="key letter">m</li>
+                <li class="key symbol"><span class="off">,</span><span class="on">&lt;</span></li>
+                <li class="key symbol"><span class="off">.</span><span class="on">&gt;</span></li>
+                <li class="key symbol"><span class="off">/</span><span class="on">&#63;</span></li>
+                <li class="key right-shift lastitem">shift</li>
+                <li class="key space lastitem">space</li>
+            </ul>
+        </div>
+
+        <!-- Modal -->
+        <div id="importModal"></div>
+
+        <footer>
+        </footer>
+        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="universal.js"></script>
+    </body>
+</html>

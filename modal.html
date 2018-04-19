@@ -1,0 +1,55 @@
+<div id="sign-up-modal" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="signUpCenter" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Sign Up For Free!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <p>Email</p>
+                    <input class="sign-up-input email" >
+                    <p>Username</p>
+                    <input class="sign-up-input username" required>
+                    <p>Password</p>
+                    <input class="sign-up-input password" placeholder="At least 6 characters" required>
+                    <p>Re-enter Password</p>
+                    <input class="sign-up-input password" required>
+                    <a data-toggle="modal" data-target="#log-in-modal" data-dismiss="modal"><p>Already have an account?</p></a>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Sign Up!</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="log-in-modal" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="logInCenter" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Log In Now!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Username</p>
+                <input class="sign-up-input username" required>
+                <p>Password</p>
+                <input class="sign-up-input password" required>
+                <a data-toggle="modal" data-target="#sign-up-modal" data-dismiss="modal"><p>Don't have an account?</p></a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Log in</button>
+
+            </div>
+        </div>
+    </div>
+</div>

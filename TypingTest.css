@@ -1,0 +1,282 @@
+html{
+    height:100%;
+    width:100%;
+}
+html *{
+    font-family: 'Roboto', 'sans-serif'; 
+}
+body{
+    height:100%;
+    width:100%;
+    position:relative;
+}
+.container-fluid{
+    padding:0 !important;
+    margin:0 !important;
+    background-color: #6d6dba;
+
+}
+
+/*/////////////////////NAV BAR //////////////*/
+.navbar{
+    margin: .5% 10% !important;
+    background-color: #9898ea;
+    /*    min-height:75px;*/
+    border: 1px black solid;
+    border-radius:10px;
+    height:10%;
+    /*    width:100%;*/
+}
+nav > div > ul > a{
+    margin:auto;
+    border-right: 1px solid black
+}
+
+nav > div > ul > a:hover{
+    margin:auto;
+    color:white !important;
+    background-color: none !important;
+    background:none !important;
+}
+
+#sign-up-button{
+
+    background:none;
+    border: 2px solid purple;
+    border-radius:10px;
+    padding:5px;
+}
+
+#sign-up-button:hover{
+    background-color:rgba(196, 169, 255,1) !important;
+}
+
+/*//////////////////TYPER///////////////////*/
+#typing-container{
+    padding: 0 10% !important;
+    height:300px;
+    width:100% !important;
+    text-align: center;
+    position:relative;
+}
+.text-box-wrapper{
+    margin:auto;
+    max-width: 850px;
+    /*    height:150px;*/
+    width:90%;
+    background: white;
+    z-index: 99;
+    padding: 10px;
+    /*    position:absolute;*/
+    font-size:22px;
+    border: 1px solid black;
+
+}
+
+#translate-size{
+    min-height:250px;
+}
+
+#text-box{
+    /*    white-space:nowrap;*/
+    text-align: left;
+}
+
+.noselect {
+    -webkit-user-select: none !important; /* Safari */
+    -khtml-user-select: none !important; /* Konqueror HTML */
+    -moz-user-select: none !important; /* Firefox */
+    -ms-user-select: none !important; /* Internet Explorer/Edge */
+    user-select: none !important; /* Non-prefixed version, currently
+    supported by Chrome and Opera */
+}
+#stats{
+    background:none;
+    /*    border:1px black solid;*/
+    color:black;
+    display:inline-block;
+}
+#wpm{
+    /*    display: inline-block;*/
+}
+
+#accuracy{
+    /*    display: inline-block;*/
+}
+/*////////////KEYBOARD///////////////*/
+#keyboard-button{
+    background:white;
+    border:1px solid black;
+    border-radius: 5px;
+    margin-top:20px;
+    float:right;
+    position:absolute;
+    right:25px;
+}
+
+#container {
+    display:none;
+    margin:15px auto;
+    width: 688px;
+    background-color:gray;
+    /*    position:fixed;*/
+}
+#keyboard {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 10px;
+}
+#keyboard li {
+    float: left;
+    margin: 0 5px 5px 0px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #f9f9f9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.capslock, .tab, .left-shift {
+    clear: left;
+}
+#keyboard .tab, #keyboard .delete {
+    width: 70px;
+}
+#keyboard .capslock {
+    width: 80px;
+}
+#keyboard .return {
+    width: 75px;
+}
+#keyboard .left-shift {
+    width: 95px;
+}
+#keyboard .right-shift {
+    width: 105px;
+}
+.lastitem {
+    margin-right: 0;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+#keyboard .space {
+    clear: left;
+    width: 655px;
+}
+.on {
+    display: none;
+}
+#keyboard li:hover {
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border-color: #e5e5e5;
+    cursor: pointer;
+    background-color: #CCCCCC;
+}
+
+
+
+#keyboardRU {
+    display:none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 10px;
+}
+#keyboardRU li {
+    float: left;
+    margin: 0 5px 5px 0px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #f9f9f9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+#keyboardRU .tab, #keyboardRU .delete {
+    width: 70px;
+}
+#keyboardRU .capslock {
+    width: 80px;
+}
+#keyboardRU .return {
+    width: 30px;    
+    word-wrap: break-word;
+}
+#keyboardRU .left-shift {
+    width: 95px;
+}
+#keyboardRU .right-shift {
+    width: 105px;
+}
+#keyboardRU .space {
+    clear: left;
+    width: 655px;
+}
+#keyboardRU li:hover {
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border-color: #e5e5e5;
+    cursor: pointer;
+    background-color: #CCCCCC;
+}
+
+.language-button{
+    background-color:white;
+    border-radius: 5px;
+    
+}
+
+#english{
+    display:none;
+    position: absolute;
+    right:50px;
+    bottom:100px;
+    width:75px;
+}
+
+#russian{
+    display:none;
+    position: absolute;
+    right: 50px;
+    bottom:150px;
+    width:75px;
+}
+/*////////////////SIGN UP MODAL//////////////////*/
+.modal-open{
+    overflow-y: visible !important; 
+}
+
+.modal-body{
+    text-align: center !important;
+}
+.modal-body p {
+    text-align: left !important;
+    margin:0 20%;
+}
+
+.modal-body a:hover{
+    cursor:pointer !important;
+}
+
+.sign-up-input{
+    width:60%;
+    margin:0 auto 15px auto;
+}
+
+/*////////////////FOOTER//////////////////*/
+footer{
+/*    height:200px;*/
+/*    width:100%;*/
+/*    bottom:0;*/
+/*    position:absolute;*/
+    background-color: red;
+}
